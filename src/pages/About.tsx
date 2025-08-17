@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -6,43 +7,43 @@ import { Card } from '../components/ui/Card';
 const teamMembers = [
   {
     name: 'Dr. Sarah Johnson',
-    role: 'Founder & CEO',
-    bio: 'Medical professional with 15+ years experience in healthcare technology.',
+    role: 'Asoschisi va Bosh direktor',
+    bio: 'Tibbiy texnologiyalar sohasida 15+ yillik tajribaga ega tibbiyot mutaxassisi.',
     image: 'https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg?auto=compress&cs=tinysrgb&w=400'
   },
   {
     name: 'Mike Chen',
-    role: 'CTO',
-    bio: 'Software engineer passionate about building healthcare solutions.',
+    role: 'Texnik direktor',
+    bio: 'Tibbiyot echimlari yaratishga ishtiyoqmand dastur muhandisi.',
     image: 'https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=400'
   },
   {
     name: 'Dr. Emily Rodriguez',
-    role: 'Head of Product',
-    bio: 'Product strategist focused on improving patient care through technology.',
+    role: 'Mahsulot boshlig\'i',
+    bio: 'Texnologiya orqali bemorlarni davolashni yaxshilashga qaratilgan mahsulot strategisti.',
     image: 'https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=400'
   }
 ];
 
 const values = [
   {
-    title: 'Patient-Centered Care',
-    description: 'Every feature we build puts patients first.',
+    title: 'Bemorga Yo\'naltirilgan Parvarish',
+    description: 'Biz yaratadigan har bir xususiyat bemorlarni birinchi o\'ringa qo\'yadi.',
     icon: '🏥'
   },
   {
-    title: 'Innovation',
-    description: 'Continuously improving healthcare through technology.',
+    title: 'Innovatsiya',
+    description: 'Texnologiya orqali sog\'liqni saqlashni doimiy yaxshilash.',
     icon: '💡'
   },
   {
-    title: 'Security',
-    description: 'Protecting sensitive medical data with enterprise-grade security.',
+    title: 'Xavfsizlik',
+    description: 'Maxfiy tibbiy ma\'lumotlarni korporativ darajadagi xavfsizlik bilan himoya qilish.',
     icon: '🔒'
   },
   {
-    title: 'Accessibility',
-    description: 'Making healthcare management accessible to everyone.',
+    title: 'Qulaylik',
+    description: 'Sog\'liqni saqlash boshqaruvini hamma uchun qulay qilish.',
     icon: '🌍'
   }
 ];
@@ -64,10 +65,10 @@ export const About: React.FC = () => {
             className="text-center"
           >
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              About ClinicCRM
+              ClinicCRM Haqida
             </h1>
             <p className="text-xl lg:text-2xl text-blue-100 max-w-4xl mx-auto">
-              Revolutionizing healthcare management with cutting-edge technology and patient-centered design.
+              Ilg'or texnologiya va bemorga yo'naltirilgan dizayn bilan sog'liqni saqlash boshqaruvini inqilob qilish.
             </p>
           </motion.div>
         </div>
@@ -83,10 +84,10 @@ export const About: React.FC = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our Core Values
+              Bizning Asosiy Qadriyatlarimiz
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The principles that guide everything we do at ClinicCRM
+              ClinicCRM da qilayotgan barcha ishlarimizni yo'naltiradigan tamoyillar
             </p>
           </motion.div>
 
@@ -123,10 +124,10 @@ export const About: React.FC = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Team
+              Bizning Jamoamiz
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The passionate professionals behind ClinicCRM
+              ClinicCRM ortidagi ishtiyoqli mutaxassislar
             </p>
           </motion.div>
 

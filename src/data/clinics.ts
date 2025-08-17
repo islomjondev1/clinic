@@ -75,6 +75,7 @@ export const doctors: Doctor[] = [
     about: 'Dr. Malika Nazarova is a skilled dermatologist specializing in skin disorders and cosmetic dermatology treatments.'
   }
       'Member of American Academy of Dermatology'
+    ]
     ],
     about: 'Dr. Malika Nazarova specializes in medical and cosmetic dermatology with a focus on skin cancer prevention and treatment.'
   }

@@ -37,19 +37,19 @@ const registerSchema = z.object({
 type RegisterFormData = z.infer<typeof registerSchema>;
 
 const benefits = [
-  'Free 30-day trial with full access',
-  'No setup fees or hidden costs',
-  'HIPAA compliant and secure',
-  '24/7 customer support',
-  'Easy data migration assistance',
-  'Mobile app included'
+  '30 kunlik bepul sinov muddati to\'liq kirishga ega',
+  'O\'rnatish to\'lovlari yoki yashirin xarajatlar yo\'q',
+  'HIPAA ga mos va xavfsiz',
+  '24/7 mijozlarni qo\'llab-quvvatlash',
+  'Oson ma\'lumotlarni ko\'chirish yordami',
+  'Mobil ilova kiritilgan'
 ];
 
 const steps = [
-  { number: 1, title: 'Create Account', description: 'Fill out the registration form' },
-  { number: 2, title: 'Verify Email', description: 'Confirm your email address' },
-  { number: 3, title: 'Setup Clinic', description: 'Configure your clinic settings' },
-  { number: 4, title: 'Start Using', description: 'Begin managing your practice' }
+  { number: 1, title: 'Akkaunt yaratish', description: 'Ro\'yxatdan o\'tish formasini to\'ldiring' },
+  { number: 2, title: 'Emailni tasdiqlash', description: 'Email manzilingizni tasdiqlang' },
+  { number: 3, title: 'Klinikani sozlash', description: 'Klinika sozlamalarini konfiguratsiya qiling' },
+  { number: 4, title: 'Foydalanishni boshlash', description: 'Amaliyotingizni boshqarishni boshlang' }
 ];
 
 export const Register: React.FC = () => {
@@ -93,10 +93,10 @@ export const Register: React.FC = () => {
                     <Stethoscope className="w-8 h-8 text-white" />
                   </div>
                   <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                    Start Your Free Trial
+                    Bepul Sinov Muddatini Boshlang
                   </h1>
                   <p className="text-gray-600">
-                    Join thousands of healthcare professionals using ClinicCRM
+                    ClinicCRM ishlatayotgan minglab tibbiyot mutaxassislariga qo'shiling
                   </p>
                 </div>
 
@@ -129,28 +129,28 @@ export const Register: React.FC = () => {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold text-gray-900 flex items-center">
                       <Building2 className="w-5 h-5 mr-2 text-blue-600" />
-                      Clinic Information
+                      Klinika Ma'lumotlari
                     </h3>
                     
                     <Input
-                      label="Clinic Name"
+                      label="Klinika Nomi"
                       {...register('clinicName')}
                       error={errors.clinicName?.message}
-                      placeholder="Your clinic name"
+                      placeholder="Klinika nomingiz"
                     />
                     
                     <Input
-                      label="Address"
+                      label="Manzil"
                       {...register('address')}
                       error={errors.address?.message}
-                      placeholder="Full clinic address"
+                      placeholder="To'liq klinika manzili"
                     />
                     
                     <Input
-                      label="Specialization"
+                      label="Mutaxassislik"
                       {...register('specialization')}
                       error={errors.specialization?.message}
-                      placeholder="e.g., Pediatrics, General Medicine"
+                      placeholder="masalan: Pediatriya, Umumiy tibbiyot"
                     />
                   </div>
 
@@ -158,64 +158,62 @@ export const Register: React.FC = () => {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold text-gray-900 flex items-center">
                       <User className="w-5 h-5 mr-2 text-blue-600" />
-                      Personal Information
+                      Shaxsiy Ma'lumotlar
                     </h3>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <Input
-                        label="First Name"
+                        label="Ism"
                         {...register('firstName')}
                         error={errors.firstName?.message}
-                        placeholder="Your first name"
+                        placeholder="Ismingiz"
                       />
                       <Input
-                        label="Last Name"
+                        label="Familiya"
                         {...register('lastName')}
                         error={errors.lastName?.message}
-                        placeholder="Your last name"
+                        placeholder="Familiyangiz"
                       />
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <Input
-                        label="Email Address"
+                        label="Email Manzil"
                         type="email"
                         {...register('email')}
                         error={errors.email?.message}
-                        placeholder="your@email.com"
+                        placeholder="sizning@email.com"
                       />
                       <Input
-                        label="Phone Number"
+                        label="Telefon Raqam"
                         {...register('phone')}
                         error={errors.phone?.message}
                         placeholder="+998 XX XXX XX XX"
                       />
-                        placeholder="+998 XX XXX XX XX"
-                      />
-                    </div>
+                        </div>
                   </div>
 
                   {/* Security */}
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold text-gray-900 flex items-center">
                       <Lock className="w-5 h-5 mr-2 text-blue-600" />
-                      Security
+                      Xavfsizlik
                     </h3>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <Input
-                        label="Password"
+                        label="Parol"
                         type="password"
                         {...register('password')}
                         error={errors.password?.message}
-                        placeholder="Create a strong password"
+                        placeholder="Kuchli parol yarating"
                       />
                       <Input
-                        label="Confirm Password"
+                        label="Parolni Tasdiqlash"
                         type="password"
                         {...register('confirmPassword')}
                         error={errors.confirmPassword?.message}
-                        placeholder="Confirm your password"
+                        placeholder="Parolingizni tasdiqlang"
                       />
                     </div>
                   </div>
@@ -229,14 +227,15 @@ export const Register: React.FC = () => {
                     />
                     <div className="text-sm">
                       <p className="text-gray-700">
-                        I agree to the{' '}
+                        Men{' '}
                         <Link to="/terms" className="text-blue-600 hover:text-blue-700">
-                          Terms of Service
+                          Xizmat Shartlari
                         </Link>{' '}
-                        and{' '}
+                        va{' '}
                         <Link to="/privacy" className="text-blue-600 hover:text-blue-700">
-                          Privacy Policy
+                          Maxfiylik Siyosati
                         </Link>
+                        ga roziman
                       </p>
                       {errors.agreeToTerms && (
                         <p className="text-red-600 mt-1">{errors.agreeToTerms.message}</p>
@@ -250,16 +249,16 @@ export const Register: React.FC = () => {
                     className="w-full"
                     isLoading={isSubmitting}
                   >
-                    Create Account & Start Trial
+                    Akkaunt Yaratish va Sinov Boshlash
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </form>
 
                 <div className="text-center mt-6">
                   <p className="text-gray-600">
-                    Already have an account?{' '}
+                    Allaqachon akkauntingiz bormi?{' '}
                     <Link to="/login" className="text-blue-600 hover:text-blue-700 font-medium">
-                      Sign in here
+                      Bu yerda kiring
                     </Link>
                   </p>
                 </div>
@@ -276,7 +275,7 @@ export const Register: React.FC = () => {
           >
             <Card>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                What's Included
+                Nimalar Kiritilgan
               </h3>
               <ul className="space-y-3">
                 {benefits.map((benefit) => (
@@ -290,20 +289,20 @@ export const Register: React.FC = () => {
 
             <Card>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Need Help?
+                Yordam Kerakmi?
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-blue-600" />
                   <div>
-                    <p className="text-sm font-medium text-gray-900">Call us</p>
+                    <p className="text-sm font-medium text-gray-900">Bizga qo'ng'iroq qiling</p>
                     <p className="text-sm text-gray-600">+998 78 123 45 67</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-600" />
                   <div>
-                    <p className="text-sm font-medium text-gray-900">Email us</p>
+                    <p className="text-sm font-medium text-gray-900">Bizga email yozing</p>
                     <p className="text-sm text-gray-600">support@cliniccrm.uz</p>
                   </div>
                 </div>
@@ -312,7 +311,7 @@ export const Register: React.FC = () => {
 
             <Card>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Getting Started
+                Boshlash
               </h3>
               <div className="space-y-3">
                 {steps.map((step) => (
