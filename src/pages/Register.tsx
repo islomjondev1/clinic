@@ -190,6 +190,8 @@ export const Register: React.FC = () => {
                         error={errors.phone?.message}
                         placeholder="+998 XX XXX XX XX"
                       />
+                        placeholder="+998 XX XXX XX XX"
+                      />
                     </div>
                   </div>
 

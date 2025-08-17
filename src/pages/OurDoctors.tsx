@@ -54,6 +54,13 @@ const doctors = [
     education: 'Tashkent Medical Academy',
     rating: 4.9,
     reviews: 189,
+    languages: ['Uzbek', 'Russian', 'English'],
+    avatar: 'https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=400',
+    bio: 'Expert in family medicine with focus on comprehensive healthcare for all family members.',
+    achievements: ['Family Medicine Excellence', 'Community Health Leader', 'Medical Research Contributor'],
+    availability: 'Mon-Fri: 7:00 AM - 7:00 PM',
+    location: 'Family Care Medical Center'
+  }
     languages: ['Uzbek', 'Russian', 'English', 'Turkish'],
     avatar: 'https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=400',
     bio: 'Expert in family medicine with special interest in women\'s health and chronic disease management.',

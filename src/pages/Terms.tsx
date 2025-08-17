@@ -76,6 +76,7 @@ const sections = [
     ]
   }
 ];
+];
 
 export const Terms: React.FC = () => {
   return (

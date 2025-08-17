@@ -70,6 +70,10 @@ export const doctors: Doctor[] = [
     qualifications: [
       'Board Certified Dermatologist',
       'Fellowship in Dermatopathology',
+      'Member of International Society of Dermatology'
+    ],
+    about: 'Dr. Malika Nazarova is a skilled dermatologist specializing in skin disorders and cosmetic dermatology treatments.'
+  }
       'Member of American Academy of Dermatology'
     ],
     about: 'Dr. Malika Nazarova specializes in medical and cosmetic dermatology with a focus on skin cancer prevention and treatment.'
@@ -238,6 +242,10 @@ export const clinics: Clinic[] = [
     description: 'Premier dermatology clinic providing comprehensive skin care and cosmetic treatments.',
     address: 'Tashkent, Mirzo Ulugbek district, Mustaqillik avenue 45',
     phone: '+998 78 123 45 69',
+    id: '3',
+    name: 'Skin Health Dermatology Center',
+    address: '123 Amir Temur Street, Tashkent',
+    phone: '+998 71 123 4567',
     email: 'info@skinhealth.uz',
     website: 'https://skinhealth.uz',
     images: [
