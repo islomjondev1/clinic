@@ -60,7 +60,12 @@ export const Sidebar: React.FC = () => {
           </div>
           <div>
             <h1 className="text-xl font-bold text-gray-900">ClinicCRM</h1>
-            <p className="text-sm text-gray-500 capitalize">{user?.role}</p>
+            <p className="text-sm text-gray-500 capitalize">
+              {user?.role === 'admin' ? 'Administrator' : 
+               user?.role === 'doctor' ? 'Shifokor' : 
+               user?.role === 'nurse' ? 'Hamshira' : 
+               user?.role === 'receptionist' ? 'Qabulxonachi' : user?.role}
+            </p>
           </div>
         </div>
       </div>

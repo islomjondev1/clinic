@@ -75,12 +75,12 @@ export const PublicHeader: React.FC = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/login">
               <Button variant="ghost" size="sm">
-                Sign In
+                Kirish
               </Button>
             </Link>
             <Link to="/register">
               <Button size="sm">
-                Get Started
+                Boshlash
               </Button>
             </Link>
           </div>
